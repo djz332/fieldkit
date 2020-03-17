@@ -1,4 +1,4 @@
-The version of the code and coords.npy array generated are sepecifically for random walk only. 
+This version of the code and coords.npy generated are sepecifically for the random walk only. 
 Certain calculations and sections of the generic code are deleted for slimplicity.
 
 To run the random walk
