@@ -9,6 +9,10 @@ subprocess.call(["f2py", "-c", "-m", "kmc_test", "--f90exec=ifort", "--opt=-O3",
 
 time.sleep(5)
 
+subprocess.call(["f2py", "kmc_main_RW.f90", "-h", "kmc_test.pyf", "-m", "kmc_test"]) #Signature file generation
+
+time.sleep(5)
+
 import kmc_test
 from kmc_test import kmc_rw
 
