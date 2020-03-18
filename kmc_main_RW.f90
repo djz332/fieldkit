@@ -154,7 +154,8 @@ trim(adjustl(numrun_value_str)) //trim(xyz_string))
 
 
   subroutine randomly_insert_tracers()
-
+   
+   !f2py threadsafe
    allocate(tracerid_pos(2*numtracer,num_runs,3))
    allocate(dummyid_pos(2*numtracer,num_runs,3))
    allocate(tracerid_posn(2*numtracer,num_runs))
@@ -332,6 +333,7 @@ trim(adjustl(numrun_value_str)) //trim(xyz_string))
 
   subroutine dynamics()
 
+    !f2py threadsafe
     allocate(status_prob(num_status,num_runs))
     allocate(average_status_prob(num_status,num_runs))
     allocate(x_prob(2*L,num_runs))
