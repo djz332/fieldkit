@@ -16,7 +16,7 @@ coords_npy = np.load("coords.npy")
 box_len = len(coords_npy[0])
 totalmoves_input = 80000000                   #Total number of moves
 
-coords_npy = np.reshape(coords_npy,(box_len**3,6)) # Contains hopping rates     
+coords_npy = np.reshape(coords_npy,(box_len**3,6)) #Contains hopping rates      
 
 kmc_test.kmc_rw.l = box_len
 kmc_test.kmc_rw.l_unscale = box_len
